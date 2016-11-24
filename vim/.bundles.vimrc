@@ -29,6 +29,10 @@ Plugin 'VundleVim/Vundle.vim'
 
 Bundle 'altercation/vim-colors-solarized'
 
+" require install PHP-CS-Fixer
+"   <leader>pcf -> fix file
+Bundle 'stephpy/vim-php-cs-fixer'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -7,13 +7,19 @@ endif
 " Key (re)Mappings
 let mapleader = ','
 map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>       " Find merge conflict markers
+" edit vimrc
+map <leader>e :e ~/Dockfiles/vim/.vimrc<CR>
 
+" Vim Behavior
+"   Auto source
+if has("autocmd")
+    autocmd bufwritepost .vimrc source $MYVIMRC
+endif
 
 
 " Layout
 
 set nu
-
 
 " Formatting
 set nowrap                      " Do not wrap long lines
@@ -42,7 +48,8 @@ endif
 " Fonts
 
 
-" Behavior
+" Editor Behavior
+
 set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 
 " Plugin settings
