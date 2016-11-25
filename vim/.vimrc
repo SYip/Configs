@@ -19,7 +19,7 @@ endif
 
 " Layout
 
-set nu
+set nu relativenumber
 
 " Formatting
 "   wrap
