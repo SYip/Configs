@@ -11,18 +11,23 @@ map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>       " Find merge conflict markers (s
 map <leader>vimrc :tabedit ~/Dockfiles/vim/.vimrc<CR>
 map <leader>source :source $MYVIMRC<CR>
 
-" Vim Behavior
+" Vim Behavior 
 "   Auto source
 if has("autocmd")
     autocmd bufwritepost .vimrc source $MYVIMRC
 endif
+set autoread
+set history=1000
+
 
 
 " Layout
 set nu relativenumber
 set splitright                  " Puts new vsplit windows to the right of the current
 set splitbelow                  " Puts new split windows to the bottom of the current
-set scrolloff=10
+set scrolloff=7
+set showmatch
+set lazyredraw
 
 " Formatting
 "   wrap
