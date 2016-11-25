@@ -1,0 +1,2 @@
+nnoremap gr :emenu View.Enter Reader View<CR>
+nnoremap gR :emenu View.Close Reader View<CR>
