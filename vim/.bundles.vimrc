@@ -32,6 +32,7 @@ Bundle 'altercation/vim-colors-solarized'
 " require install PHP-CS-Fixer
 "   <leader>pcf -> fix file
 Bundle 'stephpy/vim-php-cs-fixer'
+Bundle 'jiangmiao/auto-pairs'
 
 
 " All of your Plugins must be added before the following line
