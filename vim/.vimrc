@@ -9,6 +9,7 @@ let mapleader = ','
 map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>       " Find merge conflict markers (spf13)
 " edit vimrc
 map <leader>vimrc :tabedit ~/Dockfiles/vim/.vimrc<CR>
+map <leader>source :source $MYVIMRC<CR>
 
 " Vim Behavior
 "   Auto source
@@ -18,7 +19,6 @@ endif
 
 
 " Layout
-
 set nu relativenumber
 
 " Formatting
@@ -50,13 +50,12 @@ endif
 
 
 " Editor Behavior
-
 set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
+
 
 " Plugin settings
 
 
 " Functions
-
 
 
