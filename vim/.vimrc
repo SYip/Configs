@@ -6,9 +6,9 @@ endif
 
 " Key (re)Mappings
 let mapleader = ','
-map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>       " Find merge conflict markers
+map <leader>fc /\v^[<\|=>]{7}( .*\|$)<CR>       " Find merge conflict markers (spf13)
 " edit vimrc
-map <leader>e :e ~/Dockfiles/vim/.vimrc<CR>
+map <leader>vimrc :tabedit ~/Dockfiles/vim/.vimrc<CR>
 
 " Vim Behavior
 "   Auto source
@@ -22,7 +22,8 @@ endif
 set nu
 
 " Formatting
-set nowrap                      " Do not wrap long lines
+"   wrap
+set wrap linebreak nolist
 set autoindent                  " Indent at the same level of the previous line
 set shiftwidth=4                " Use indents of 4 spaces
 set expandtab                   " Tabs are spaces, not tabs
