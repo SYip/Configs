@@ -9,7 +9,7 @@ my config files
 
 2. Put the below code in ~/.vimrc
 
-	if filereadable(expand("~/Dockfiles/vim/.vimrc")) 
-		source ~/Dockfiles/vim/.vimrc 
+	if filereadable(expand("~/Dotfiles/vim/.vimrc")) 
+		source ~/Dotfiles/vim/.vimrc 
 	endif 
 
